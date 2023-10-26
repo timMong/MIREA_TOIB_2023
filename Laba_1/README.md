@@ -44,3 +44,5 @@
 ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/16.png)
 Успешно попадаем на страницу
 ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/17.png)
+Затем нужно будет вводить код из приложения
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/18.png)
