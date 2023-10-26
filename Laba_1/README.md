@@ -28,6 +28,15 @@
 ## Создадим роли admin и user: На боковой панели кликаем на Clients - Выбираем нашего клиента - Roles - Create role - Задаем необходимые значения - Save.
 ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/10.png)
 
-## Надо ли связать роль и пользователя???
+## Надо связать роль и пользователя
 
-## Настроим аутентификацию на Nextcloud
+## Настроим аутентификацию на Nextcloud: Скачаем в App "Social Login". Затем перейдем в Административные настройки - Social Login - Custom Open ID Connet - Задаем необходимые параметры.
+Endpoints можно найти в Realm Settings - OpenID Endpoint Configuration.
+Секрет можно найти в Clients - Выбираем наш - Credentials.
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/12.png)
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/13.png)
+
+## Настроим 2FA: В Keycloak переходим в Authentication - Browser - Browser Conditional OTP - Выбираем Required.
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/14.png)
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/15.png)
+![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Laba_1/images/16.png)
