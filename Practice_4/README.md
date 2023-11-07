@@ -1,21 +1,22 @@
 # Отчет по Лабораторной работе №1
 ## Rsyslog. Сервер
 1. На ВМах настроил сеть на Сетевой мост
-2. На первой ВМ (сервере) скачаем rsyslog
+2. На первой ВМ (сервер) скачаем rsyslog
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/1.png)
 3. Запустим сервис и включим режим автозагрузки. Проверим работоспособность
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/2.png)
-4.Чтобы настроить rsyslog в качестве реципиента/сервера ведения журнала, необходимо установить протокол (либо UDP, либо TCP,   либо оба), который он будет использовать для удаленного приема системного журнала, а также      порт, который он прослушивает. Также нужно определить набор правил для обработки удаленных журналов:
+4. Чтобы настроить rsyslog в качестве реципиента/сервера ведения журнала, необходимо установить протокол (либо UDP, либо TCP,   либо оба), который он будет использовать для удаленного приема системного журнала, а         также   порт, который он прослушивает. Также нужно определить набор правил для обработки удаленных журналов:
     - первая строка - куда сохраняются логи
     - вторая строка - откуда и что сохраняется
-    - третья строка - указывает rsyslog прекратить обработку сообщений после их записи в файл. Если вы не укажете «&~», сообщения будут записаны в локальные файлы.
-  Для этого редактируем файл /etc/rsyslog.conf
-  ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/3.png)
+    - третья строка - указывает rsyslog прекратить обработку сообщений после их записи в файл. Если это не указать,то сообщения будут записаны в локальные файлы.
+  
+   Для этого редактируем файл /etc/rsyslog.conf
+   ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/3.png)
 5. Перезапускам сервис
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/4.png)
 
 ## Rsyslog. Клиент
-1. На второй ВМ (клиенет) скачаем rsyslog. Запустим его и включим режим автозагрузки. Проверим работоспособность
+1. На второй ВМ (клиент) скачаем rsyslog. Запустим его и включим режим автозагрузки. Проверим работоспособность
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/5.png)
 2. Отредактируем файл /etc/rsyslog.conf, добавив в конец файла правило пересылки логов
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/6.png)
@@ -43,10 +44,10 @@
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/16.png)
 
 ## Signoz
-1. Клонируем репозитрий для сервера - https://github.com/SigNoz/signoz.git
+1. Клонируем репозитрий для сервера - https://github.com/SigNoz/signoz.git<br>
    Запускаем контейнер.
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/17.png)
-2. Клонируем репозитрий для клиента - https://github.com/SigNoz/sample-nodejs-app.git
+2. Клонируем репозитрий для клиента - https://github.com/SigNoz/sample-nodejs-app.git<br>
    Редактируем docker-compose файл.
    ![](https://github.com/timMong/MIREA_TOIB_2023/blob/main/Practice_4/images/18.1.png)
    Запускаем контейнер.
